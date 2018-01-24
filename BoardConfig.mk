@@ -21,9 +21,6 @@ TARGET_OTA_ASSERT_DEVICE := hlte,hltetmo,hltexx
 # Kernel
 TARGET_KERNEL_CONFIG := gzr_defconfig
 
-# Fingerprint
-include $(COMMON_PATH)/fingerprint/board.mk
-
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
