@@ -13,20 +13,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common klte
-include device/samsung/klte-common/BoardConfigCommon.mk
+# inherit from common hlte
+include device/samsung/hlte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := klte,klteacg,klteatt,kltecan,kltelra,kltetmo,klteub,klteusc,kltevzw,kltexx
+TARGET_OTA_ASSERT_DEVICE := hlte,hlteacg,hlteatt,hltecan,hltelra,hltetmo,hlteub,hlteusc,hltevzw,hltexx
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_klte_pn547_defconfig
+TARGET_KERNEL_CONFIG := lineage_hlte_pn547_defconfig
 
 # Fingerprint
 include $(COMMON_PATH)/fingerprint/board.mk
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
-TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/klte/init/init_klte.cpp
+TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
 
 # NFC
 include $(COMMON_PATH)/nfc/pn547/board.mk
@@ -35,4 +35,4 @@ include $(COMMON_PATH)/nfc/pn547/board.mk
 include $(COMMON_PATH)/radio/single/board.mk
 
 # inherit from the proprietary version
--include vendor/samsung/klte/BoardConfigVendor.mk
+-include vendor/samsung/hlte/BoardConfigVendor.mk

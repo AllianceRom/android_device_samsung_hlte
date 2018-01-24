@@ -18,16 +18,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/klte/klte-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/hlte/hlte-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Fingerprint
-$(call inherit-product, device/samsung/klte-common/fingerprint/product.mk)
+$(call inherit-product, device/samsung/hlte-common/fingerprint/product.mk)
 
 # NFC
-$(call inherit-product, device/samsung/klte-common/nfc/pn547/product.mk)
+$(call inherit-product, device/samsung/hlte-common/nfc/pn547/product.mk)
 
-# common klte
-$(call inherit-product, device/samsung/klte-common/klte.mk)
+# common hlte
+$(call inherit-product, device/samsung/hlte-common/hlte.mk)
