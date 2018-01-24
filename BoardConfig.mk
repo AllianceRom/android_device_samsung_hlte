@@ -19,7 +19,7 @@ include device/samsung/hlte-common/BoardConfigCommon.mk
 TARGET_OTA_ASSERT_DEVICE := hlte,hltetmo,hltexx
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineage_hlte_pn547_defconfig
+TARGET_KERNEL_CONFIG := gzr_defconfig
 
 # Fingerprint
 include $(COMMON_PATH)/fingerprint/board.mk
