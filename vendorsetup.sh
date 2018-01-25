@@ -1,1 +1,1 @@
-add_lunch_combo validus_klte-userdebug
+add_lunch_combo validus_hlte-userdebug
