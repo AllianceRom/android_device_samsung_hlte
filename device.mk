@@ -27,7 +27,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 $(call inherit-product, device/samsung/hlte-common/fingerprint/product.mk)
 
 # NFC
-$(call inherit-product, device/samsung/hlte-common/nfc/pn547/product.mk)
+$(call inherit-product, device/samsung/klte-common/nfc/bcm2079x/product.mk)
 
 # common hlte
 $(call inherit-product, device/samsung/hlte-common/hlte.mk)
