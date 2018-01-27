@@ -88,7 +88,7 @@ void init_target_properties()
         /* hltexx */
         property_override("ro.build.fingerprint", "samsung/hltexx/hlte:6.0.1/MMB29M/N9005XXS1CQI4:user/release-keys");
         property_override("ro.build.description", "hltexx-user 6.0.1 MMB29M N9005XXS1CQI4 release-keys");
-        property_override("ro.product.model", "SM-N900F");
+        property_override("ro.product.model", "SM-N9005");
         property_override("ro.product.device", "hlte");
         gsm_properties("gsm");
     } else if (bootloader.find("N900T") == 0) {
